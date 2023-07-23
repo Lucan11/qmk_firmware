@@ -27,3 +27,7 @@
  * That should be sufficient. 
  */
 #define DEBOUNCE 20
+
+// Enable N-Key rollover (you can press/hold as many keys as you want at the same time)
+// This function is not supported through many KVM switches and older BIOSes
+#define FORCE_NKRO
