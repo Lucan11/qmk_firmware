@@ -17,18 +17,18 @@
 #pragma once
 
 
-/* Note that this does not increase initial latency, due to the algorithm 
+/* Note that this does not increase initial latency, due to the algorithm
  * used. So, setting a higher value does not matter much.
- * A 20ms debounce per key means that you can press at most 50x per second. 
- * That should be sufficient. 
+ * A 20ms debounce per key means that you can press at most 50x per second.
+ * That should be sufficient.
  */
 #ifdef DEBOUNCE
     #undef DEBOUNCE
 #endif
-#define DEBOUNCE 20
+#define DEBOUNCE 8
 
 
-/* Enable N-Key rollover (you can press/hold as many keys as you want at the 
+/* Enable N-Key rollover (you can press/hold as many keys as you want at the
  * same time). This function is not supported through many KVM switches and
  * older BIOSes. To disable this, press Fn+N
  */
@@ -42,5 +42,5 @@
  */
 #define RGB_DISABLE_WHEN_USB_SUSPENDED
 #define RGB_MATRIX_TIMEOUT          1200000                         // 20 minutes (20 * 60 * 1000ms)
-#define RGB_MATRIX_DEFAULT_MODE     RGB_MATRIX_SOLID_COLOR          
-#define RGB_MATRIX_DEFAULT_HUE      127                             
+#define RGB_MATRIX_DEFAULT_MODE     RGB_MATRIX_SOLID_COLOR
+#define RGB_MATRIX_DEFAULT_HUE      127
